@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding-top: 40px;
+    /*padding: 0;
+    /*border: 0;
+    /*outline: 0;
+    /*font-size: 100%;*/
+    vertical-align: baseline;
+    background: transparent;
+}
+
+p, ul, h1, h2, h3, h4, h5, h6, label {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+textarea {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FDC401;
+  }
+  
+  li {
+    float: left;
+    width: 20%;
+  }
+  
+  li a {
+    font-size: large;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 100;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+.Name {
+    color: #FDC401;
+}
+
+.desc {
+    animation: slide 3s;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+#name {
+    color:#FDC401;
+}
+
+.position-fixed {
+    background-color: #FDC401;
+    position: fixed;
+    margin: 0px;
+    top: 0px;
+    display: block;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+
+.button, button {
+    border-radius: 4px;
+    font-size: small;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 100;
+    background-color: #FDC401;
+}
+
+.button:hover, button:hover {
+    background-color: #111;
+  }
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    margin: 0px;
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+button, .button, select, input {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#goodchartem
+{
+    width: 40%;
+    margin-right: 10%;
+}
+
+#disclaimer
+{
+    display: none;
+    width: 400px;
+    margin: auto;
+}
+
+#badchartem
+{
+    display: inline;
+    width: 40%;
+}
+#good {
+    background-color: lightgreen;
+    display: inline;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#bad {
+    background-color: lightcoral;
+    display: inline;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#input, #submitinput , #input2, #submitinput2
+{
+    display: none;
+    align-content: center;
+    margin: auto;
+}
+
+#input, #input2
+{
+    margin-top: 10px;
+    width: 400px;
+    height: 100px;
+
+}
+
+#input0, .S1A
+{
+    margin-left: 43%;
+    display: inline;
+}
+
+#submitinput0
+{
+    margin-left: 43%;
+}
+
+#submitinput, #submitinput2
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#magnitudescale
+{
+    display: none;
+}
+
+/* radio buttons */
+#veryweaklabel
+{
+    color:darkred;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#weaklabel
+{
+    color: lightcoral;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#mildlabel
+{
+    color: orange;
+    font-size: larger;
+    font-weight: 500;
+    
+}
+
+#stronglabel
+{
+    color: greenyellow;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#verystronglabel
+{
+    color: yellowgreen;
+    font-size: larger;
+    font-weight: 500;
+
+}
+
+#EmotionStatementOutput, #CircumstancesOutput, #IdealsOutput
+{
+    display: none;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#input0
+{
+    resize: none;
+}
+
+
+ul.notelist p{
+    margin: 0px;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .card {
+    background-color: #f6ed4e;
+    display: inline-block;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 240px;
+    outline-width: 2px;
+    outline-color: #111;
+    outline-style: solid;
+    margin-top: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+    position: relative;
+  }
+
+  /*
+  .card:hover {
+    background-color: #c49703;
+  }
+  */
+
+  .center {
+    align-items: center;
+  }
+
+
+  .deleteBtns {
+    position: absolute;
+    bottom: 7px;
+    left: 75px;
+  }
+
+  .selectBtns {
+    position: absolute;
+    bottom : 7px;
+  }
+
+  .middleBoi {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  .buttonBuffer {
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    bottom: 0px;
+    background-color: #f6ed4e;
+  }

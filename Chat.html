@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Chat</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Images/logo.svg">
+        <script src="testcode.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <header>
+        <!-- Will link to bldng.net in the future-->
+    </header>
+    <nav class="position-fixed">
+        <a href="Settings.html">
+            <img id="logo" width=52px src="Images/logo white fill.svg" style="float:left">
+            </a>
+            <ul>
+                <li class="homecol"><a href="home.html">Home</a></li>
+                <li class="chatcol"><a href="Chat.html">Chat</a></li>
+                <li><a href="Introspect.html">Introspect</a></li>
+                <li><a href="MeditationCenter.html">Meditate</a></li>
+                <li class="refcol"><a href="Reflection.html">Reflect</a></li>
+            </ul>
+    </nav>
+    <body>
+        <br>
+        <h1 class="medcenter" align="middle">Chat</h1>
+        <br>
+        <h3 class="medcenter" id="biggeroutput" align="middle"><p>What is the direction of the emotion you are feeling right now?</p> Emotions are often called "the weather of the mind", how would you forecast your mind right now ?</h3>
+        <p class="medcenter" id="output" align="middle" >Need a little assistance? Look at the <button title="Good emotions on the left wheel" id="good" type="button">Good</button> or <button title="Bad emotions on the right wheel" type="button" id="bad">Bad</button> emotion wheels for some ideas.</p>
+        <textarea type="text" id="input0"></textarea>
+        <input class="button" id="submitinput0" type="button" value="Submit" onclick="Step1()">
+        <img class="chartem" id="goodchartem" src="Images/chartem+.png">
+        <img class="chartem" id="badchartem" src="Images/chartem-.png">
+        <div id="magnitudescale" align="middle">
+            <input type="radio" id="veryweak" name="magnitude" value="Very Weak">
+            <label id="veryweaklabel" for="Very Weak">Very Weak</label>
+            <input type="radio" id="weak" name="magnitude" value="Weak">
+            <label id="weaklabel"for="Weak">Weak</label>
+            <input type="radio" id="mild" name="magnitude" value="Mild">
+            <label id="mildlabel" for="Mild">Mild</label>
+            <input type="radio" id="strong" name="magnitude" value="Strong">
+            <label id="stronglabel" for="html">Strong</label>
+            <input type="radio" id="verystrong" name="magnitude" value="Very Strong">
+            <label id="verystronglabel" for="Very Strong">Very Strong</label><br>
+            <button id="submitmagnitude" type="button" onclick="Step2()">Submit</button>
+        </div>
+
+        <div id="textboxinput">
+            <textarea type="text" id="input"></textarea>
+            <input class="button" id="submitinput" type="button" value="Submit" onclick="Step3()">
+        </div>
+        <h6 class="medcenter" id="disclaimer" align="middle">Regret: not meeting past expectations you put on yourself, Disappointment: past external expectations not being met, Worry: expecting an uncertainty of many outcomes, Shame: not living up to an ideal self, etc.</h6>
+        <div id="textboxinput2">
+            <textarea type="text" id="input2"></textarea>
+            <input class="button" id="submitinput2" type="button" value="Submit" onclick="Step4()">
+        </div>
+    <!--  
+        <h3 class="medcenter" align="middle">What is the magnitude of the emotion you are feeling?</h3>
+        <p class="medcenter" align="middle" >How strongly are you feeling whatever emotion you are feeling? </p>
+       
+
+        <br>
+
+        <h3 class="medcenter" align="middle">What caused you to feel the way you are feeling now? Why do you feel the way you feel?</h3>
+        <p class="medcenter" align="middle">What happened out there in the external world that is causing you to internally feel this way right now? </p>
+        
+        <br>
+
+        <h3 class="medcenter" align="middle">Expectation Identifier: What kind of expectations and "idealness" did you have that caused you to feel this way?</h3>
+        <p class="medcenter"align="middle"> Emotions are often created by some sort of expectations being at play of what should/could/would ideally happen, what is the root expectation that caused your emotion?</p>
+        <h6 class="medcenter" align="middle">Regret: not meeting past expectations you put on yourself, Disappointment: past external expectations not being met, Worry: expecting an uncertainty of many outcomes, Shame: not living up to an ideal self, etc.</h6>
+    -->
+    <h6 class="medcenter" id="disclaimer" align="middle">Regret: not meeting past expectations you put on yourself, Disappointment: past external expectations not being met, Worry: expecting an uncertainty of many outcomes, Shame: not living up to an ideal self, etc.</h6>
+    <p align="center" id="EmotionStatementOutput">Something</p>
+    <p align="center" id="CircumstancesOutput">Something</p>
+    <p align="center" id="IdealsOutput">Something</p>
+</body>
+</html>

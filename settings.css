@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    padding-top: 40px;
+    /*padding: 0;
+    /*border: 0;
+    /*outline: 0;
+    /*font-size: 100%;*/
+    vertical-align: baseline;
+    background: transparent;
+}
+
+p, ul, h1, h2, h3, label {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FDC401;
+    display: flex;
+  }
+  
+  li {
+    float: left;
+    width: 20%;
+  }
+  
+  li a {
+    font-size: large;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 100;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+.Name {
+    color: #FDC401;
+}
+
+.desc {
+    animation: slide 3s;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+#name {
+    color:#FDC401;
+}
+
+.position-fixed {
+    background-color: #FDC401;
+    position: fixed;
+    margin: 0px;
+    top: 0px;
+    display: block;
+    width: 100%;
+}
+
+
+
+.button, button {
+    border-radius: 4px;
+    font-size: small;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: 100;
+    background-color: #FDC401;
+}
+
+.button:hover, button:hover {
+    background-color: #111;
+  }
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    margin: 0px;
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+button, .button, select, input {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#goodchartem
+{
+    width: 40%;
+    margin-right: 10%;
+}
+
+#disclaimer
+{
+    display: none;
+    width: 400px;
+    margin: auto;
+}
+
+#badchartem
+{
+    display: inline;
+    width: 40%;
+}
+#good {
+    background-color: lightgreen;
+    display: inline;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#bad {
+    background-color: lightcoral;
+    display: inline;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#input, #submitinput , #input2, #submitinput2
+{
+    display: none;
+    align-content: center;
+    margin: auto;
+}
+
+#input, #input2
+{
+    margin-top: 10px;
+    width: 400px;
+    height: 100px;
+
+}
+
+#input0
+{
+    margin-left: 43%;
+    display: inline;
+}
+
+#submitinput0
+{
+    margin-left: 43%;
+}
+
+#submitinput, #submitinput2
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#magnitudescale
+{
+    display: none;
+}
+
+/* radio buttons */
+#veryweaklabel
+{
+    color:darkred;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#weaklabel
+{
+    color: lightcoral;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#mildlabel
+{
+    color: orange;
+    font-size: larger;
+    font-weight: 500;
+    
+}
+
+#stronglabel
+{
+    color: greenyellow;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#verystronglabel
+{
+    color: yellowgreen;
+    font-size: larger;
+    font-weight: 500;
+
+}
+
+#EmotionStatementOutput, #CircumstancesOutput, #IdealsOutput
+{
+    display: none;
+    margin-left: 30%;
+    margin-right: 30%
+}
+
+#input0
+{
+    resize: none;
+}
+
+body {
+    height: 600px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+  
+  div.item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: coral;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  
+  div.item:nth-of-type(1) {
+    --offset: 1;
+    background-color: #90f1ef;
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #ff70a6;
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color: #ff9770;
+  }
+  div.item:nth-of-type(4) {
+    --offset: 4;
+    background-color: #ffd670;
+  }
+  div.item:nth-of-type(5) {
+    --offset: 5;
+    background-color: #e9ff70;
+  }
+  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
+  
+  input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+  }
+  
+  input:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(5):checked ~ main#carousel {
+    --position: 5;
+  }
+
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .card {
+    display: inline-block;
+    outline: #111;
+  }
