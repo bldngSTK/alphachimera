@@ -308,7 +308,7 @@ function deleteItem(e) {
 
     const noteId = Number(e.target.parentNode.getAttribute("data-note-id"));
     localStorage.setItem("noteId", noteId);
-    window.location.href = '/bldng/reflectSelect.html';
+    window.location.href = '/reflectSelect.html';
 }
 
 /*
