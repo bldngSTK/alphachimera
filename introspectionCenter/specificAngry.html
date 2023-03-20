@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Manage Anger</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="../Images/logo.svg">
+        <script src="introspectSubmit.js"></script> <!--add this after <link rel="icon" href="../Images/logo.svg"> line -->
+
+    </head>
+    <header>
+        <!-- Will link to bldng.net in the future-->
+    </header>
+    <nav class="position-fixed">
+        <a href="../Settings.html">
+            <img id="logo" width=52px src="../Images/logo.png" style="float:left">
+            </a>
+            <ul>
+                <li class="homecol"><a href="../home.html">Home</a></li>
+                <li class="chatcol"><a href="../Chat.html">Chat</a></li>
+                <li><a href="../Introspect.html">Introspect</a></li>
+                <li><a href="../MeditationCenter.html">Meditate</a></li>
+                <li class="refcol"><a href="../Reflection.html">Reflect</a></li>
+            </ul>
+    </nav>
+    <body>
+        <br>
+        <h1 align="middle" class="S1H">Manage Anger</h1> <!--~~~~~S1H at top of each section~~~~~-->
+        <p>Anger is different from other emotions because most negative emotions are usually socially acceptable to express ('Sad people who break down crying deserve sympathy', 'Worried people are panicking because they care', etc) but people who explode in Anger (after trying to repeatedly suppress it) often get blamed, demonized, villified, and frowned upon the most, because it's easiest to see the damaging effects of Anger (even though other emotions cause damage too). All human beings are capable of experiencing emotions because all emotions exist to provide useful information in some way, and Anger is a protective response against some form of hurt or a threat of hurt (oftentimes you yourself getting hurt, but Anger can also empathically manifest from seeing others hurt). The more you address the root 'hurt' that is causing the Anger, the more the anger starts to decompress.
+        <br><br>
+                <h4 align="middle" class="S1Q"><p>What are you angry about?</p></h4>
+                <br><textarea class="S1A" rows="5" cols="27" align="middle"type="text"></textarea><br> <!--every answer has class="S1A" --> 
+                <h6 align="middle">Ex: I'm angry about being fired from my job. </h6>
+                <h4 align="middle" class="S1Q"><p>How were you (or someone else) hurt or threatened in some way?</p></h4>
+                <br><textarea class="S1A" rows="5" cols="27" align="middle"type="text"></textarea><br> <!--every answer has class="S1A" --> 
+                <h6 align="middle">Ex: Getting fired hurts because I really wanted<br>to keep my job and I got wrongly fired.</h6>
+
+
+        </p><script>S1 = 'S1'</script> <!--before submit button for section-->
+        <a align="right"href="../Introspect.html"><button class="button" id="" type="button" onclick=introspectSubmit(S1)>Submit</button></a><!--~~~~~~~-->
+    </body>
+</html>

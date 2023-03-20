@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Discover Life Purpose</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="../Images/logo.svg">
+        <script src="introspectSubmit.js"></script> <!--add this after <link rel="icon" href="../Images/logo.svg"> line -->
+
+    </head>
+    <header>
+        <!-- Will link to bldng.net in the future-->
+    </header>
+    <nav class="position-fixed">
+        <a href="../Settings.html">
+            <img id="logo" width=52px src="../Images/logo.png" style="float:left">
+            </a>
+            <ul>
+                <li class="homecol"><a href="../home.html">Home</a></li>
+                <li class="chatcol"><a href="../Chat.html">Chat</a></li>
+                <li><a href="../Introspect.html">Introspect</a></li>
+                <li><a href="../MeditationCenter.html">Meditate</a></li>
+                <li class="refcol"><a href="../Reflection.html">Reflect</a></li>
+            </ul>
+    </nav>
+    <body>
+        <a href="../Introspect.html"><button type="button">Back</button></a>
+
+        <h1 align="middle" class="S1H">Passive Journaling</h1>
+        <br>
+        <h2 align="middle" class="S1Q">How was your day/week?</h2> <!--~~~~~every question has class="S1Q"~~~~~-->
+        <textarea class="S1A" rows="5" cols="27" align="middle"type="text"></textarea><br>
+        <br><h6 align="middle">Chill laidback version of 'Chat'.</h6>
+        <script>S1 = 'S1'</script>
+        <a align="right"href="../Introspect.html"><button class="button" id="" type="button" onclick=introspectSubmit(S1)>Submit</button></a>
+    </body>
+</html>
