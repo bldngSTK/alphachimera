@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Discover Life Purpose</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="../Images/logo.svg">
+        <script src="introspectSubmit.js"></script> <!--add this after <link rel="icon" href="../Images/logo.svg"> line -->
+
+    </head>
+    <header>
+        <!-- Will link to bldng.net in the future-->
+    </header>
+    <nav class="position-fixed">
+        <a href="../Settings.html">
+            <img id="logo" width=52px src="../Images/logo.png" style="float:left">
+            </a>
+            <ul>
+                <li class="homecol"><a href="../home.html">Home</a></li>
+                <li class="chatcol"><a href="../Chat.html">Chat</a></li>
+                <li><a href="../Introspect.html">Introspect</a></li>
+                <li><a href="../MeditationCenter.html">Meditate</a></li>
+                <li class="refcol"><a href="../Reflection.html">Reflect</a></li>
+            </ul>
+    </nav>
+    <body>
+        <a href="../Introspect.html"><button type="button">Back</button></a>
+
+        <h1 align="middle" class="S1H">Discover Life Purpose</h1>
+        <br>
+        <h2 align="middle" class="S1Q">What's wrong with the world?</h2> <!--~~~~~every question has class="S1Q"~~~~~-->
+        <h3 align="middle">Write 500 words about what you think is wrong with the world.</h2>
+            <br>
+            <textarea class="S1A" rows="5" cols="27" align="middle" type="text"></textarea>
+            <h5 align="middle"><span id="wordCount">0</span>/500</h5>
+            <script>
+                S1 = 'S1';
+                const textarea = document.querySelector('.S1A');
+                const wordCount = document.getElementById('wordCount');
+                textarea.addEventListener('keyup', () => {
+                    const text = textarea.value;
+                    const count = text.split(/\s+/).length;
+                    wordCount.textContent = count;
+                });
+            </script>
+            <a align="right" href="../Introspect.html">
+                <button class="button" id="" type="button" onclick=introspectSubmit(S1)>Submit</button></body>
+</html>
